@@ -11,8 +11,8 @@ class Player{
     circle(this.position.x,this.position.y,10);
   }
   
-  public void move(){
-    this.position.add(this.speed);
+  public void move(float deltaTime){
+    this.position.add(PVector.mult(this.speed,deltaTime));
   }
   
   
